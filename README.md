@@ -1,2 +1,2 @@
-# GregorPotocnik
+# Gregor Potočnik
 My homepage
