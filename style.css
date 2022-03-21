@@ -2,6 +2,9 @@
   --bs-primary-rgb: 13,202,240;
 }
 
+body {
+  transition: color, background-color 0.5s;
+}
 .plaster {
   font-family: 'Plaster', cursive;
 }
@@ -15,6 +18,7 @@
   border-bottom: 1px solid #dee2e6;
   padding-top: 5rem !important;
   padding-bottom: 5rem !important;
+  min-height: 50vh;
 }
 a {
   color: rgb(var(--bs-primary-rgb));
@@ -22,8 +26,13 @@ a {
 
 /* media rule: */
 @media (min-width: 768px) {
-  .resume-section {
-    min-height: 100vh;
+
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #000;
+    color: rgb(215 215 215);
   }
 }
 
