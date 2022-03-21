@@ -1,0 +1,36 @@
+:root {
+  --bs-primary-rgb: 13,202,240;
+}
+
+.plaster {
+  font-family: 'Plaster', cursive;
+}
+.obfuscate span {
+  display: none;
+}
+.obfuscate {
+  text-transform: lowercase;
+}
+.resume-section {
+  border-bottom: 1px solid #dee2e6;
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+}
+a {
+  color: rgb(var(--bs-primary-rgb));
+}
+
+/* media rule: */
+@media (min-width: 768px) {
+  .resume-section {
+    min-height: 100vh;
+  }
+}
+
+/* helping classes: */
+.uppercase {
+  text-transform: uppercase;
+}
+.bold {
+  font-weight: bold;
+}
