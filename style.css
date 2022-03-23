@@ -43,6 +43,15 @@ body {
   padding: 7px;
   margin-top: 2px;
 }
+.komentar {
+  color: #9d9d9d;
+}
+.komentar::before {
+  content: "(";
+}
+.komentar::after {
+  content: ")";
+}
 a {
   color: rgb(var(--bs-primary-rgb));
 }
