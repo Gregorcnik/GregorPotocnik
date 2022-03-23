@@ -20,19 +20,58 @@ body {
   padding-bottom: 5rem !important;
   min-height: 50vh;
 }
+.startFade {
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  animation-name: fadeOutLight;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.naslov {
+  font-size: 4rem;
+  line-height: 3.5rem;
+}
+.google-icon-social {
+  font-size: 23px;
+  color: white;
+  background-color: rgb(var(--bs-primary-rgb));
+  border-radius: 50%;
+  padding: 7px;
+  margin-top: 2px;
+}
 a {
   color: rgb(var(--bs-primary-rgb));
 }
 
-/* media rule: */
-@media (min-width: 768px) {
-
+/*keyframes*/
+@keyframes fadeOutDark {
+  from {background-color: black;}
+  to {background-color: rgba(0, 0, 0, 0); z-index: -1;}
+}
+@keyframes fadeOutLight {
+  from {background-color: white; display: block;}
+  to {background-color: rgba(0, 0, 0, 0); z-index: -1;}
 }
 
+/* media rule: */
+@media (max-width: 471px) {
+  .naslov {
+    font-size: calc(100vw/8);
+    line-height: calc(100vw/8/0.9);
+  }
+}
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #000;
     color: rgb(215 215 215);
+  }
+  body .startFade {
+    background-color: black;
+    animation-name: fadeOutDark;
   }
 }
 

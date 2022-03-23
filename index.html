@@ -8,20 +8,22 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plaster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
   </head>
   <body>
+    <div class="startFade"></div>
     <div class="container-fluid p-0">
       <div class="resume-section p-3 p-5" id="about">
         <div class="row w-100" style="max-width: 1100px">
           <div class="col-md-12 col-lg-6 mb-3">
-            <h1 class="plaster" style="font-size: 4rem; line-height: 3.5rem;">Gregor <br> <span class="text-primary">Potočnik</span></h1>
+            <h1 class="plaster naslov">Gregor <br> <span class="text-primary">Potočnik</span></h1>
           </div>
           <div class="col-md-12 col-lg-6 mb-4">
-            <div class="uppercase bold">
-              programer and web page designer ·
-              <span class="obfuscate">
-                gregor<span> is my name</span>.<span> But my surname is </span>pot<span>očnik. I am programer</span>.<span> I like to be </span>gm<span>. My mail contains </span>@<span> and after @ is </span>gmail<span>. I do not know what is different betwen </span>.<span> and </span>com<span>a. Do you know?</span>
+            <div class="bold">
+              programer and web designer ·
+              <span>
+                gregor<span class="visually-hidden"> is my name</span>.<span class="visually-hidden"> But my surname is </span>pot<span class="visually-hidden">očnik. I am programer</span>.<span class="visually-hidden"> I like to be </span>gm<span class="visually-hidden">. My mail contains </span>@<span class="visually-hidden"> and after @ is </span>gmail<span class="visually-hidden">. I do not know what is different betwen </span>.<span class="visually-hidden"> and </span>com<span class="visually-hidden">a. Do you know?</span>
               </span>
             </div>
           </div>
@@ -29,7 +31,7 @@
         <ul class="list-inline list-social-icons mb-0">
           <li class="list-inline-item">
             <a class="text-primary" target="_blank" href="https://github.com/Gregorcnik">
-              <span class="fa-stack fa-lg">
+              <span class="fa-stack fa-lg" data-bs-toggle="tooltip" data-bs-placement="right" title="my github profile">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-github fa-stack-1x fa-inverse"></i>
               </span>
@@ -37,7 +39,75 @@
           </li>
         </ul>
       </div>
+
+      <div class="resume-section p-3 p-5" id="recentProjects">
+        <h1 class="plaster" style="font-size: 3rem;">Recent <span class="text-primary">Projects*</span></h1>
+        <ul>
+
+          <br>
+          <li>
+            <p>Website for checking and learning English irregular verbs</p>
+            <ul class="list-inline list-social-icons mb-0">
+              <li class="list-inline-item">
+                <a class="text-primary" target="_blank" href="https://github.com/Gregorcnik/nepravilni-glagoli">
+                  <span class="fa-stack fa-lg" data-bs-toggle="tooltip" data-bs-placement="right" title="project on github">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+
+              <li class="list-inline-item">
+                <a class="text-primary" target="_blank" href="https://gregorcnik.github.io/nepravilni-glagoli/">
+                  <span class="fa-stack fa-lg" data-bs-toggle="tooltip" data-bs-placement="right" title="website">
+                    <i class="material-icons google-icon-social">public</i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <br>
+          <li>
+            <p>Website for workshop on Symmetries of Graphs</p>
+            <ul class="list-inline list-social-icons mb-0">
+              <li class="list-inline-item">
+                <a class="text-primary" target="_blank" href="https://github.com/Gregorcnik/Workshop">
+                  <span class="fa-stack fa-lg" data-bs-toggle="tooltip" data-bs-placement="right" title="project on github">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+
+              <li class="list-inline-item">
+                <a class="text-primary" target="_blank" href="https://gregorcnik.github.io/Workshop/">
+                  <span class="fa-stack fa-lg" data-bs-toggle="tooltip" data-bs-placement="right" title="website">
+                    <i class="material-icons google-icon-social">public</i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <br>
+          <li>
+            <p>Homepage (it's still in work)</p>
+          </li>
+        </ul>
+        <small style="position: relative;bottom: -50px; color: #9d9d9d;">
+          * For now, these projects are just a hobby. I don't accept orders yet.
+        </small>
+      </div>
+
     </div>
+
+    <script>
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+      })
+    </script>
 
   </body>
 </html>
