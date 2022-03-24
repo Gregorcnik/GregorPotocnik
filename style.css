@@ -52,6 +52,10 @@ body {
 .komentar::after {
   content: ")";
 }
+.progress-bar {
+  background-color: rgb(var(--bs-primary-rgb));
+  height:30px;
+}
 a {
   color: rgb(var(--bs-primary-rgb));
 }
@@ -81,6 +85,9 @@ a {
   body .startFade {
     background-color: black;
     animation-name: fadeOutDark;
+  }
+  .progress {
+    background-color: rgb(215 215 215);
   }
 }
 
