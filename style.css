@@ -26,7 +26,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: white;
-  animation-name: fadeOutLight;
+  animation-name: fadeOut;
   animation-duration: 1.5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -56,17 +56,16 @@ body {
   background-color: rgb(var(--bs-primary-rgb));
   height:30px;
 }
+.progress {
+  height:30px;
+}
 a {
   color: rgb(var(--bs-primary-rgb));
 }
 
 /*keyframes*/
-@keyframes fadeOutDark {
-  from {background-color: black;}
-  to {background-color: rgba(0, 0, 0, 0); z-index: -1;}
-}
-@keyframes fadeOutLight {
-  from {background-color: white; display: block;}
+@keyframes fadeOut {
+  from {background-color: inherit;}
   to {background-color: rgba(0, 0, 0, 0); z-index: -1;}
 }
 
@@ -81,10 +80,6 @@ a {
   body {
     background-color: #000;
     color: rgb(215 215 215);
-  }
-  body .startFade {
-    background-color: black;
-    animation-name: fadeOutDark;
   }
   .progress {
     background-color: rgb(215 215 215);
