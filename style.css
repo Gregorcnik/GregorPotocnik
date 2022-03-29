@@ -69,6 +69,12 @@ a {
   to {background-color: rgba(0, 0, 0, 0); z-index: -1;}
 }
 
+/*fonts*/
+@font-face {
+  font-family: Plaster;
+  src: url(Plaster/Plaster-Regular.ttf);
+}
+
 /* media rule: */
 @media (max-width: 471px) {
   .naslov {
