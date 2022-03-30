@@ -61,6 +61,16 @@ body {
 }
 a {
   color: rgb(var(--bs-primary-rgb));
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(var(--bs-primary-rgb));
+  text-decoration: underline;
+}
+#about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /*keyframes*/
@@ -79,7 +89,7 @@ a {
 @media (max-width: 471px) {
   .naslov {
     font-size: calc(100vw/8);
-    line-height: calc(100vw/8/0.9);
+    line-height: calc(100vw/8/1.1);
   }
 }
 @media (prefers-color-scheme: dark) {
